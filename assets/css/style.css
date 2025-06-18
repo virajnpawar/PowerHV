@@ -98,8 +98,9 @@ html {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--pri-font);
   background-color: #fff;
+  font-weight: 500;
   font-size: 15px;
   font-size: 1rem;
   color: #687187;
@@ -204,7 +205,7 @@ a:hover {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
 }
 
 /*** contact form error handling ***/
@@ -3036,7 +3037,7 @@ img {
 }
 
 .site-footer .link-widget ul {
-  width: 100%;
+  width: 50%;
   float: left;
   border-left: 1px solid var(--pri-col);
   padding-left: 15px;
@@ -3071,11 +3072,11 @@ img {
   margin-top: 15px;
 }
 
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
   .site-footer .contact-widget {
     padding-left: 25px;
   }
-}
+} */
 
 .site-footer .contact-widget ul {
   margin-top: 25px;
@@ -3664,7 +3665,6 @@ img {
 
 .contact-section .left-col:before {
   content: "";
-  background: url("../images/dotted-circel.png") center center/cover no-repeat local;
   width: 479px;
   height: 464px;
   position: absolute;
@@ -3735,7 +3735,7 @@ img {
 }
 
 .contact-section form textarea {
-  height: 180px;
+  height: 170px;
 }
 
 .contact-section form {
@@ -4875,7 +4875,7 @@ img {
 
 .services-section-s2 .service-grids .details,
 .services-section-s3 .service-grids .details {
-  padding: 35px 0 0 75px;
+  padding: 35px 0 0 0;
   position: relative;
 }
 
@@ -4883,7 +4883,7 @@ img {
 
   .services-section-s2 .service-grids .details,
   .services-section-s3 .service-grids .details {
-    padding: 25px 0 0 55px;
+    padding: 25px 0 0 0;
   }
 }
 
@@ -5393,7 +5393,7 @@ img {
 --------------------------------------------------------------*/
 .fun-fact-section {
   background-color: #f7f9fa;
-  padding: 100px;
+  padding: 6% 10% 6% 10%;
 }
 
 @media (max-width: 991px) {
@@ -7240,8 +7240,7 @@ img {
 }
 
 .service-single-section .service-single-content .benefit .img-holder {
-  width: 270px;
-  float: left;
+  width: 100%;
 }
 
 @media (max-width: 767px) {
@@ -7383,7 +7382,7 @@ nav.navigation.fixed {
 }
 
 .para {
-  padding: 0 100px 50px 100px;
+  padding: 0 5% 50px 5%;
 }
 
 .para h2,
@@ -7399,7 +7398,7 @@ nav.navigation.fixed {
   height: 100%;
   padding: 20px 0;
   box-sizing: border-box;
-  margin-bottom: 50px;
+  margin: 2% 0;
 }
 
 .logo-track {
@@ -7490,3 +7489,42 @@ nav.navigation.fixed {
 .site-header #navbar>ul li .active1{
   color: var(--pri-col);
 }
+
+textarea {
+  resize: none;
+}
+
+.redcol{
+  color: var(--pri-col);
+}
+
+.hlight{
+  font-weight: 700;
+}
+
+
+.services-section-s2 .service-grids {
+    display: flex
+;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+  hr {
+    border: 2px solid rgb(255, 231, 231);
+    margin: -10px 0 40px 0;
+    
+  }
+
+  .heading{
+    margin: 0px 2% 40px 2%;
+  }
+
+  .heading h2:hover{
+    color: var(--pri-col);
+  }
+
+  .hrli {
+    border: 2px solid #f3f3f3;
+    margin: -10px 0 40px 0;
+  }
